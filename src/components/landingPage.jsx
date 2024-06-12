@@ -7,7 +7,7 @@ import { ArrowUpTrayIcon } from '@heroicons/react/24/outline';
 export default function LandingPage() {
 
   return (
-    <div className='bg-black pt-14'>
+    <div className='bg-black pt-20'>
       <div style={{ backgroundImage: `url(${bgImage})` }} className="bg-cover bg-center w-full">
 
         <div class="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
@@ -22,7 +22,7 @@ export default function LandingPage() {
               <p class="mx-auto mt-10 max-w-md text-base leading-7 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti perferendis magnam.</p>
 
               <div class="group relative mt-10 inline-flex">
-                <a href="#" title="" class="rounded-xl flex bg-primary px-4 py-3 font-medium text-black transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600">
+                <a href="#" title="" class="rounded-xl flex bg-primary px-4 py-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)] font-medium text-black transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600">
                   <ArrowUpTrayIcon className='w-5 mr-4' />Upload Document</a>
 
                 <div class="-scale-x-100 absolute -left-10 -bottom-10 hidden h-10 w-10 -rotate-12 text-white md:inline-flex">
