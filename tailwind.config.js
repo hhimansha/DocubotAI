@@ -7,12 +7,15 @@ module.exports = {
     extend: {
       backgroundColor: {
         'primary': '#29B6F6',
-        'grey': 'rgb(40, 40, 40)',
-        'grey-mid': '#343432',
+        'surface': '#121212',
+        'light-base': '#262626',
         'grey-light': '#edeff1',
       },
       textColor: {
         'primary': '#29B6F6',
+      },
+      borderColor: {
+        'light-base': '#262626',
       },
       screens: {
         'xs': {'max': '412px'}
