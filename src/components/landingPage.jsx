@@ -22,7 +22,7 @@ export default function LandingPage() {
               <p class="mx-auto mt-10 max-w-md text-base leading-7 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti perferendis magnam.</p>
 
               <div class="group relative mt-10 inline-flex">
-                <a href="#" title="" class="rounded-xl flex bg-primary px-4 py-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)] font-medium text-black transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600">
+                <a href="/dashboard" title="" class="rounded-xl flex bg-primary px-4 py-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)] font-medium text-black transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600">
                   <ArrowUpTrayIcon className='w-5 mr-4' />Upload Document</a>
 
                 <div class="-scale-x-100 absolute -left-10 -bottom-10 hidden h-10 w-10 -rotate-12 text-white md:inline-flex">
@@ -52,38 +52,139 @@ export default function LandingPage() {
 
         <div className='flex justify-center relative pt-64 h-96  w-full bg-gradient-to-b from-transparent to-black'></div>
         <div className=' text-white w-full mt-0 pt-0  bg-black font-sans'>
-          {/* Section Features  */}
-          <section>
-            {/* Features Container */}
-            <div className="mx-auto max-w-7xl px-5 pt-16 md:px-10 md:pt-24 lg:pt-32">
-              {/* Features Title */}
-              <div className="text-center">
-                <h2 className="text-3xl font-bold md:text-5xl">Make every step user-centric</h2>
-                <p className="mx-auto mb-8 mt-4 max-w-lg text-[#647084] md:mb-12 lg:mb-16">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam,purus sit amet luctus magna fringilla urna</p>
-              </div>
-              {/* Features Grid */}
-              <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
-                {/* Features Item */}
-                <div className="grid gap-8 p-8 md:p-10">
-                  <img src="https://assets.website-files.com/6357722e2a5f19121d37f84d/6358bda43ea08a612343b1f3_Vector-3.svg" alt="" className="inline-block h-8" />
-                  <p className="text-xl font-semibold">Support</p>
-                  <p className="text-sm text-[#636262]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
-                </div>
-                {/* Features Item */}
-                <div className="grid gap-8 p-8 md:p-10">
-                  <img src="https://assets.website-files.com/6357722e2a5f19121d37f84d/6358bdb1bd05f5915d7bf31c_Vector-4.svg" alt="" className="inline-block h-8" />
-                  <p className="text-xl font-semibold">Organise</p>
-                  <p className="text-sm text-[#636262]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
-                </div>
-                {/* Features Item */}
-                <div className="grid gap-8 p-8 md:p-10">
-                  <img src="https://assets.website-files.com/6357722e2a5f19121d37f84d/6358bdaaeeb5cbd611bf5048_Vector-5.svg" alt="" className="inline-block h-8" />
-                  <p className="text-xl font-semibold">Flexibility</p>
-                  <p className="text-sm text-[#636262]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
-                </div>
-              </div>
+          {/* Section HIW */}
+<section>
+  {/* Container */}
+  <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 bg-black">
+    {/* Text */}
+    <p className="text-center text-sm font-bold uppercase">3 easy steps</p>
+    <h2 className="text-center text-3xl font-bold md:text-5xl">How it works</h2>
+    <p className="mx-auto mb-12 mt-4 max-w-lg text-center text-[#647084]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam,purus sit amet luctus magna fringilla urna</p>
+    {/* Content */}
+    <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
+      <div className="flex flex-col gap-4 rounded-2xl outline outline-1 outline-gray-800 p-8 md:p-10">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary">
+          <p className="text-xl font-bold text-white">1</p>
+        </div>
+        <p className="text-xl font-semibold">Find Component</p>
+        <p className="text-sm text-[#647084]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
+      </div>
+      <div className="flex flex-col gap-4 rounded-md  outline outline-1 outline-gray-800 p-8 md:p-10">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#276ef1]">
+          <p className="text-xl font-bold text-white">2</p>
+        </div>
+        <p className="text-xl font-semibold">Copy and Paste</p>
+        <p className="text-sm text-[#647084]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
+      </div>
+      <div className="flex flex-col gap-4 rounded-md r-solid  outline outline-1 outline-gray-800  p-8 md:p-10">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#276ef1]">
+          <p className="text-xl font-bold text-white">3</p>
+        </div>
+        <p className="text-xl font-semibold">Done</p>
+        <p className="text-sm text-[#647084]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="bg-black">
+  {/* Container */}
+  <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+    {/* Heading */}
+    <div className="mx-auto mb-8 max-w-3xl text-center md:mb-12 lg:mb-16">
+      <h2 className="mb-4 mt-6 text-3xl font-extrabold md:text-5xl">Frequently Asked Questions</h2>
+      <div className="mx-auto mt-4 max-w-[528px]">
+        <p className="text-[#636262]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam,purus sit amet luctus magna fringilla urna</p>
+      </div>
+    </div>
+
+    {/* FAQ Items */}
+    <div className="mb-8 grid grid-cols-1 justify-center gap-4 md:mb-12 lg:mb-16 lg:grid-cols-2">
+      {/* FAQ Left Col */}
+      <div className="w-full">
+        <div className="mb-6 w-full rounded-xl bg-black p-8">
+          <div className="flex cursor-pointer items-start justify-between">
+            <div className="text-xl font-bold">How this theme is different from others in market?</div>
+            <div className="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+              <div className="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+              <div className="h-0.5 w-5 bg-[#0b0b1f]"></div>
             </div>
-          </section>
+          </div>
+          <div className="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+            <p className="tracking-[0.2px]">Pellentesque in nisi aliquet, pellentesque purus eget, imperdiet turpis. Fusce at enim quis neque viverra convallis. Vivamus ut elementum leo, eget tempus nisl. Sed viverra enim ac turpis posuere consectetur. Sed enim nibh, consequat vitae lacus eu, ullamcorper ullamcorper massa. Pellentesque purus eget, imperdiet turpis.</p>
+          </div>
+        </div>
+        <div className="mb-6 w-full rounded-xl bg-black p-8">
+          <div className="flex cursor-pointer items-start justify-between">
+            <div className="text-xl font-bold">What is your policy on distributon</div>
+            <div className="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+              <div className="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+              <div className="h-0.5 w-5 bg-[#0b0b1f]"></div>
+            </div>
+          </div>
+          <div className="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+            <p className="tracking-[0.2px]">Pellentesque in nisi aliquet, pellentesque purus eget, imperdiet turpis. Fusce at enim quis neque viverra convallis. Vivamus ut elementum leo, eget tempus nisl. Sed viverra enim ac turpis posuere consectetur. Sed enim nibh, consequat vitae lacus eu, ullamcorper ullamcorper massa. Pellentesque purus eget, imperdiet turpis.</p>
+          </div>
+        </div>
+        <div className="mb-6 w-full rounded-xl bg-black p-8">
+          <div className="flex cursor-pointer items-start justify-between">
+            <div className="text-xl font-bold">How can I contribute to Flowspark?</div>
+            <div className="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+              <div className="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+              <div className="h-0.5 w-5 bg-[#0b0b1f]"></div>
+            </div>
+          </div>
+          <div className="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+            <p className="tracking-[0.2px]">Pellentesque in nisi aliquet, pellentesque purus eget, imperdiet turpis. Fusce at enim quis neque viverra convallis. Vivamus ut elementum leo, eget tempus nisl. Sed viverra enim ac turpis posuere consectetur. Sed enim nibh, consequat vitae lacus eu, ullamcorper ullamcorper massa. Pellentesque purus eget, imperdiet turpis.</p>
+          </div>
+        </div>
+      </div>
+      {/* FAQ Right Col */}
+      <div className="w-full">
+        <div className="mb-6 w-full rounded-xl bg-black p-8">
+          <div className="flex cursor-pointer items-start justify-between">
+            <div className="text-xl font-bold">How can I contribute to Flowspark?</div>
+            <div className="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+              <div className="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+              <div className="h-0.5 w-5 bg-[#0b0b1f]"></div>
+            </div>
+          </div>
+          <div className="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+            <p className="tracking-[0.2px]">Pellentesque in nisi aliquet, pellentesque purus eget, imperdiet turpis. Fusce at enim quis neque viverra convallis. Vivamus ut elementum leo, eget tempus nisl. Sed viverra enim ac turpis posuere consectetur. Sed enim nibh, consequat vitae lacus eu, ullamcorper ullamcorper massa. Pellentesque purus eget, imperdiet turpis.</p>
+          </div>
+        </div>
+        <div className="mb-6 w-full rounded-xl bg-black p-8">
+          <div className="flex cursor-pointer items-start justify-between">
+            <div className="text-xl font-bold">How can I contribute to Flowspark?</div>
+            <div className="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+              <div className="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+              <div className="h-0.5 w-5 bg-[#0b0b1f]"></div>
+            </div>
+          </div>
+          <div className="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+            <p className="tracking-[0.2px]">Pellentesque in nisi aliquet, pellentesque purus eget, imperdiet turpis. Fusce at enim quis neque viverra convallis. Vivamus ut elementum leo, eget tempus nisl. Sed viverra enim ac turpis posuere consectetur. Sed enim nibh, consequat vitae lacus eu, ullamcorper ullamcorper massa. Pellentesque purus eget, imperdiet turpis.</p>
+          </div>
+        </div>
+        <div className="mb-6 w-full rounded-xl bg-black p-8">
+          <div className="flex cursor-pointer items-start justify-between">
+            <div className="text-xl font-bold">How can I contribute to Flowspark?</div>
+            <div className="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+              <div className="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+              <div className="h-0.5 w-5 bg-[#0b0b1f]"></div>
+            </div>
+          </div>
+          <div className="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+            <p className="tracking-[0.2px]">Pellentesque in nisi aliquet, pellentesque purus eget, imperdiet turpis. Fusce at enim quis neque viverra convallis. Vivamus ut elementum leo, eget tempus nisl. Sed viverra enim ac turpis posuere consectetur. Sed enim nibh, consequat vitae lacus eu, ullamcorper ullamcorper massa. Pellentesque purus eget, imperdiet turpis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="mb-8 md:mb-12 lg:mb-16"></div>
+    <p className="text-center">Can’t find the answer you’re looking for? Reach out to our <a href="#" className="text-black">customer support team</a>.</p>
+  </div>
+</section>
+
         </div>
       </div>
     </div>

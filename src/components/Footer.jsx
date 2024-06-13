@@ -1,4 +1,5 @@
  import React from 'react';
+ import logo from './assets/DocubotAI2.png'
  
  export default function Footer() {
     return(
@@ -6,7 +7,7 @@
   <div className="mx-auto w-full max-w-7xl px-5 pb-16 md:px-10 md:pb-24 lg:pb-32">
     <div className="flex flex-col items-center">
       <a href="#" className="mb-8 inline-block max-w-full">
-        <img src="https://assets.website-files.com/63904f663019b0d8edf8d57c/6399728d302d2471f18b229f_Group%2047874%20(2).svg" alt="" className="inline-block max-h-10" />
+        <img src={logo} alt="" className="inline-block max-h-10" />
       </a>
       <div className="text-center font-semibold max-[991px]:ml-0 max-[991px]:mr-0 max-[991px]:py-1">
         <a href="#" className="inline-block px-6 py-2 font-normal transition hover:text-[#d6a701]">About</a>
