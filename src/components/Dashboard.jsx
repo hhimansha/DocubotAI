@@ -4,18 +4,34 @@ import axios from 'axios';
 import logo from './assets/DocubotAI2.png'
 
 export default function Dashboard() {
-
-   const [data, setData] = useState(null);
-
-  useEffect(() => {
-    axios.get('http://localhost:5000/api/data')
-      .then(response => {
-        setData(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching data: ', error);
-      });
-  }, []);
+   const [file, setFile] = useState(null);
+   const [text, setText] = useState('');
+ 
+   const handleFileChange = (e) => {
+     setFile(e.target.files[0]);
+   };
+ 
+   const handleSubmit = async (e) => {
+     e.preventDefault();
+     if (!file) {
+       alert('Please select a file first!');
+       return;
+     }
+ 
+     const formData = new FormData();
+     formData.append('file', file);
+ 
+     try {
+       const response = await axios.post('http://127.0.0.1:5000/upload', formData, {
+         headers: {
+           'Content-Type': 'multipart/form-data',
+         },
+       });
+       setText(response.data.text);
+     } catch (error) {
+       console.error('Error uploading the file:', error);
+     }
+   };
 
    return (
       <>
@@ -47,7 +63,12 @@ export default function Dashboard() {
                      </label>
                   </div> 
 
-                  <button class="flex items-center p-2 text-black bg-primary rounded-xl ml-4">Process</button>
+                  <form onSubmit={handleSubmit}>
+        <input type="file" accept="application/pdf" onChange={handleFileChange} />
+        <button type="submit" className='text-white bg-slate-600'>Upload</button>
+      </form>
+      <h2 className='text-white'>Extracted Text</h2>
+      <pre className='text-white'></pre>
 
                   
                   
@@ -174,7 +195,7 @@ export default function Dashboard() {
                       class="relative ml-3 text-sm text-white bg-[#44494c] py-2 px-4 shadow rounded-xl"
                     >
                       <div>
-                        {data ? <p>{data.message}</p> : <p>Loading...</p>}
+                        <p>{text}</p>
                       </div>
                     </div>
                   </div>
