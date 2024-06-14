@@ -6,6 +6,7 @@ import logo from './assets/DocubotAI2.png'
 export default function Dashboard() {
    const [file, setFile] = useState(null);
    const [text, setText] = useState('');
+   const [chunks, setChunks] = useState([]);
  
    const handleFileChange = (e) => {
      setFile(e.target.files[0]);
@@ -28,6 +29,7 @@ export default function Dashboard() {
          },
        });
        setText(response.data.text);
+       setChunks(response.data.chunks);
      } catch (error) {
        console.error('Error uploading the file:', error);
      }
@@ -174,7 +176,7 @@ export default function Dashboard() {
                       class="relative mr-3 text-sm text-white bg-light-base py-2 px-4 shadow rounded-xl"
                     >
                       <div>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing. ?
+                        {chunks}
                       </div>
                       <div
                         class="absolute text-xs bottom-0 right-0 -mb-5 mr-2 text-gray-500"
