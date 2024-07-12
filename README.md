@@ -4,6 +4,7 @@
 DocubotAI is a web application that allows users to upload multiple PDFs and create a chatbot using the knowledge base from those PDFs. Users can interact with the content of the PDFs by asking questions through a chat interface. This application leverages OpenAI's API for embeddings and large language models (LLMs).
 
 
+
 ## Features
 
 - Upload multiple PDF documents.
@@ -20,6 +21,25 @@ DocubotAI is a web application that allows users to upload multiple PDFs and cre
 - FAISS: Vector store for storing embeddings.
 - PyPDF2: Library for extracting text from PDF files.
 - Langchain: Library for text processing, embeddings, and conversational AI.
+
+## RAG Explanation
+DocubotAI is a Retrieval-Augmented Generation (RAG) system, combining the strengths of retrieval-based systems with generative models:
+
+1.Retrieval:
+- Document Upload and Text Extraction: Users upload PDFs, and DocubotAI extracts text from these documents using PyPDF2.
+- Text Chunking and Embedding: The extracted text is split into manageable chunks and then embedded using OpenAI's embedding model. These embeddings are stored in a vector store (FAISS), forming the knowledge base.
+  
+2.Augmentation:
+
+- Vector Store Retrieval: When a user asks a question, relevant text chunks (based on embeddings) are retrieved from the vector store.
+  
+3.Generation:
+
+- LLM Interaction: The retrieved text chunks are then used by a language model (OpenAI's LLM) to generate a coherent and contextually relevant response to the user's question.
+
+By combining these components, DocubotAI effectively handles a wide range of user queries with responses that are both relevant and coherent, embodying the RAG approach.
+
+
 ## Installation
 
 1.Clone the repository:
