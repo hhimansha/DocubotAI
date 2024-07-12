@@ -1,7 +1,7 @@
 
 <img src="./images/DocubotAI2.png">
 
-DocubotAI is a web application that allows users to upload multiple PDFs and create a chatbot using the knowledge base from those PDFs. Users can interact with the content of the PDFs by asking questions through a chat interface. This application leverages OpenAI's API for embeddings and large language models (LLMs).
+DocubotAI is a Retrieval-Augmented Generation (RAG) web application that allows users to upload multiple PDFs and create a chatbot using the knowledge base from those PDFs. Users can interact with the content of the PDFs by asking questions through a chat interface. This application leverages OpenAI's API for embeddings and large language models (LLMs).
 
 
 
